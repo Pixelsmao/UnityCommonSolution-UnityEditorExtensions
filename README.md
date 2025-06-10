@@ -38,58 +38,30 @@
 
 ## 安装
 
-1. **克隆仓库**
+1. **通过克隆仓库安装**
+
    将本仓库克隆到您的 Unity 项目的 `Assets` 目录下：
 
    ```bash
-   git clone https://github.com/YourUsername/UnityCommonSolution-UnityEditorExtensions.git Assets/UnityCommonSolution-UnityEditorExtensions
+   git clone https://github.com/Pixelsmao/UnityCommonSolution-UnityEditorExtensions.git
    ```
 
-2. **导入 Unity 项目**
-   打开 Unity 编辑器，确保所有文件已正确导入。
+2. **使用UPM进行安装：**
 
-3. **使用 Assembly Definition**
-   本仓库已包含 `Pixelsmao.UnityCommonSolution.UnityEditorExtensions.asmdef` 文件，确保您的项目支持 Assembly Definition
-   功能。
+   在 Unity 编辑器中，点击顶部菜单栏,打开 Package Manager 窗口.
 
----
+   ```
+   Window > Package Manager
+   ```
 
-## 使用方法
+   在 Package Manager 窗口的左上角，点击 **+** 按钮，然后选择 **Add package from git URL...**。
+   在弹出的输入框中，粘贴本仓库的 Git URL：
 
-### 1. 使用 `MenuOptionGroup`
+   ```
+   https://github.com/Pixelsmao/UnityCommonSolution-UnityEditorExtensions.git
+   ```
 
-`MenuOptionGroup` 提供了水平和垂直布局的菜单选项管理功能。您可以通过以下方式使用：
-
-```csharp
-var menuOptions = new List<MenuOption>
-{
-    new MenuOption("Option 1", () => Debug.Log("Option 1 Selected")),
-    new MenuOption("Option 2", () => Debug.Log("Option 2 Selected"))
-};
-
-var horizontalMenu = new HorizontalMenuOptionGroup(menuOptions);
-horizontalMenu.Draw();
-```
-
-### 2. 使用 `EditorGUIIcons`
-
-`EditorGUIIcons` 提供了内置图标的快速访问功能。例如，加载 GitHub 图标：
-
-```csharp
-Texture2D githubIcon = EditorGUIIcons.GetGitHubIcon();
-GUI.DrawTexture(new Rect(0, 0, 64, 64), githubIcon);
-```
-
-### 3. 使用 `RectExtensions`
-
-`RectExtensions` 提供了对 `Rect` 的扩展方法，例如调整大小或位置：
-
-```csharp
-Rect rect = new Rect(0, 0, 100, 100);
-rect = rect.Expand(10); // 扩展 Rect 的大小
-```
-
----
+   然后点击 **Add**。
 
 ## 文件结构
 
