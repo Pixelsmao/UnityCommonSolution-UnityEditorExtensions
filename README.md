@@ -1,17 +1,14 @@
 # UnityCommonSolution - UnityEditorExtensions
 
+![GitHub](https://img.shields.io/badge/Unity-2021.3%2B-blue)
+![GitHub](https://img.shields.io/badge/license-MIT-green)
+![GitHub](https://img.shields.io/badge/Platform-Windows-red)
+
 欢迎来到 **Unity 通用解决方案 - Unity 编辑器扩展** 仓库！该项目旨在提供一组实用的 Unity 编辑器扩展和工具，以优化您的 Unity
 开发工作流程。无论您是在处理 UI 组件、自定义检查器还是编辑器窗口，本仓库都提供了一系列可重用的脚本和工具，以增强您的 Unity
 编辑器体验。
 
-## 目录
 
-- [功能](#功能)
-- [安装](#安装)
-- [使用方法](#使用方法)
-- [文件结构](#文件结构)
-
----
 
 ## 功能
 
